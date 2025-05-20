@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.passwordstrength.js"></script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div id="errors" class="error"></div>
+        <div id="success" class="register"></div>
+        <div class="first">
+        <label for="email">Email :</label>
+        <input id="email" type="text">
+        </div>
+        <div class="first">
+            <label for="phoneno">Phone Number :</label>
+            <input id="phoneno" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10"></input>  
+
+
+        </div>
+        <div class="first">
+            <label for="password">Password :</label>
+            <input id="password" type="password" class="glyphicon" >
+            
+        </div>
+        <div class="first">
+            <label for="confirmpass">Confirm-password:</label>
+            <input id="confirmpass" type="password">
+        </div>
+         <input id="submit" type="submit">        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
